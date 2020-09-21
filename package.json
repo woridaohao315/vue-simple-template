@@ -1,0 +1,43 @@
+{
+  "name": "h5uw",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "pro": "vue-cli-service build",
+    "int": "npm run build:int",
+    "uat": "npm run build:uat",
+    "build:int": "vue-cli-service build --mode int",
+    "build:uat": "vue-cli-service build --mode uat"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "axios": "^0.19.2",
+    "postcss-px-to-viewport": "^1.1.1",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "vue-wechat-title": "^2.0.5"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {},
+      "postcss-px-to-viewport": {
+        "viewportWidth": 375,
+        "minPixelValue": 1
+      }
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
